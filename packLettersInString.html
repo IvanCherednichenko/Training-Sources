@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Test for packLettersInString/unpackLettersInString functions</title>
+  <script src='packLettersInString.js'></script>
+</head>
+
+<body>
+  <p>
+    <input type='text' id='textEditor' value='A3B2A5CD' />
+  </p>
+  <p>
+    <input type='button' id='buttonPack' value='Pack string' onclick='buttonPackOnClick()' />
+    <input type='button' id='buttonUnpack' value='Unpack string' onclick='buttonUnpackOnClick()' />
+    <input type='button' id='buttonFullTest' value='Full Test' onclick='buttonFullTestOnClick()' />
+  </p>
+  <p>
+    Output:<br />
+    <textarea id='textareaOutput' cols='125' rows='25'></textarea>
+  </p>
+</body>
+
+<script>
+function buttonPackOnClick() {
+  textareaOutput.value = textareaOutput.value + packLettersInString(textEditor.value) + '\n\n';
+}  // buttonPackOnClick
+
+function buttonUnpackOnClick() {
+  textareaOutput.value = textareaOutput.value + unpackLettersInString(textEditor.value) + '\n\n';
+}  // buttonUnpackOnClick
+
+function buttonFullTestOnClick() {
+  var LPacked = packLettersInString(textEditor.value);
+  var LUnpacked = unpackLettersInString(LPacked);
+
+  textareaOutput.value =
+      textareaOutput.value +
+      'String \"' + textEditor.value + '\" was packed to \"' + LPacked + '\" and was unpacked to \"' + LUnpacked + '\". And it is ' + (textEditor.value == LUnpacked ? 'valid' : 'invalid') + ' result.\n' +
+      'String \"' + textEditor.value + '\" was unpacked to \"' + LUnpacked + '\" and was packed to \"' + LPacked + '\". And it is ' + (textEditor.value == LPacked ? 'valid' : 'invalid') + ' result.\n\n';
+}  // buttonFullTestOnClick()
+</script>
+
+</html>
