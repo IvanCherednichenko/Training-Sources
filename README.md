@@ -1,0 +1,2 @@
+# packLettersInString
+packLettersInString/unpackLettersInString on different languages
