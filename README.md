@@ -1,2 +1,4 @@
 # packLettersInString
-packLettersInString/unpackLettersInString on different languages
+packLettersInString/unpackLettersInString in different languages:
+- JavaScript
+- Pascal/Delphi
