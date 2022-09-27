@@ -1,3 +1,8 @@
+//
+// zeroesToEnd.js
+// (C) 2022 Ivan Cherednichenko. All Rights Reserved.
+//
+
 /// <summary>Move all the zeroes to the end an array.</summary>
 /// <remarks>It is solution for https://edabit.com/challenge/XR4suWJok9wdaNJ5j.</remarks>
 /// <example>zeroesToEnd([1, 2, 0, 0, 4, 0, 5]) --> [1, 2, 4, 5, 0, 0, 0]</example>
